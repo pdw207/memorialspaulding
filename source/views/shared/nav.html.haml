@@ -1,0 +1,17 @@
+%header.navigation{:role => "banner"}
+  .navigation-wrapper
+    = link_to "javascript:void(0)", class: "navigation-mobile-menu", id: "js-navigation-mobile-menu" do
+      = image_tag "hamburger.svg", alt: "Memorial Spalding"
+    %nav{:role => "navigation"}
+      %ul#js-navigation-menu.navigation-menu
+        %li.nav-link.logo
+          = link_to '/' do
+            = image_tag "logo.png", alt: "Memorial Spalding Logo"
+        %li.nav-link
+          = nav_link 'Contact', '/contact'
+        %li.nav-link
+          = nav_link 'Location', '/location'
+        %li.nav-link
+          = nav_link 'Information', '/information'
+        %li.nav-link
+          = nav_link 'About', '/about'

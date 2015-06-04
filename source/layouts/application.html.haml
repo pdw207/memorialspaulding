@@ -8,5 +8,10 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    = yield
+    #wrapper
+      = partial 'views/shared/nav'
+      #main-content
+        = yield
+      #footer
+        = partial 'views/shared/footer'
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
