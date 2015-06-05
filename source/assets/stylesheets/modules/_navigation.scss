@@ -101,6 +101,7 @@
 
   ul li.nav-link {
     background: $navigation-background;
+    font-weight: 700;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -120,7 +121,7 @@
       }
       &.active:after {
         content: "";
-        border-bottom: 1px $navigation-color solid;
+        border-bottom: 2px $navigation-color solid;
         padding: 16px;
         position: absolute;
         top: 44px;

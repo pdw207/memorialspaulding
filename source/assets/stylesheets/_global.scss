@@ -1,51 +1,29 @@
-html,
-body {
-  margin:0;
-  padding:0;
-  height:100%;
-}
-
 
 body {
   background-color: $light-gray;
   color: $medium-gray;
 }
 
-#wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-
 #main-content {
   margin-top: $navigation-height + $container-spacing;
-  margin-bottom: $footer-height + $container-spacing;
 }
 
 #footer {
+  clear: both;
   background: $white;
   padding: 30px;
   width: 100%;
   height: $footer-height;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .hide {
   display: none;
 }
 
-.intro {
-  margin: $container-spacing auto;
-  width: 80%;
-}
-
-.org-chart {
-  margin: $container-spacing auto;
+.intro,
+.info,
+.copy {
+  margin: auto;
   width: 90%;
-  text-align: center;
-  @include media ($medium-screen) {
-    width: 40%;
-  }
+  max-width: 700px;
 }

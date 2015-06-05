@@ -14,7 +14,8 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
+  font-size: $header-font-size;
+  font-weight: 700;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
   text-align: center;

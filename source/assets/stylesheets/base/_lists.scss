@@ -15,6 +15,13 @@ ol {
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
+
+  &.bullets li:before {
+    content: "·";
+    font-size: 59px;
+    vertical-align: text-bottom;
+    line-height: 12px;
+  }
 }
 
 dl {

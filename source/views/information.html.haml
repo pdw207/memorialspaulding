@@ -1,18 +1,28 @@
-%h1 Information for Parents
-%ul
-  %li Memorial Spaulding School Extended Day is an on-site facility for children in kindergarten through grade five.
-  %li Extended Day follows the Newton Public School calendar with few exceptions. Parents will be notified accordingly.
-  %li The Extended Day hours are Monday through Friday 12:30pm - 6:00pm.
-  %li Unannounced visits by parents at any time their child is present are encouraged.
-  %li Input from parents through open lines of communication is welcome.
-  %li Homework is an important part of Extended Day. Educators provide assistance on an individual basis.
-  %li Extended Day provides a special entertainment program for the six Early Release days during the school year.
-  %li The Program is not responsible for making arrangements for the arrival to or departure from the Program, or to any activities on or off the premises.
+= partial 'views/shared/triptych',
+  locals: { photos: ['Information_1_Backpack', 'Information_2_LeavingRoom', 'Information_3_Toys'] }
 
-%p Good health and nutrition are encouraged and is an integral part of the Program. We offer the following suggestions of nutritious items for lunch
-%ul
-  %li Yogurt
-  %li Fresh Fruit & Vegetables
-  %li Cheese
-  %li Pasta
-  %li Juice & Water%h1
+.copy-wrapper
+  .copy
+    %h1 Information for Parents
+    %ul.bullets
+      %li Memorial Spaulding School Extended Day is an on-site facility for children in kindergarten through grade five.
+      %li Extended Day follows the Newton Public School calendar with few exceptions. Parents will be notified accordingly.
+      %li The Extended Day hours are Monday through Friday 12:30pm - 6:00pm.
+      %li Unannounced visits by parents at any time their child is present are encouraged.
+      %li Input from parents through open lines of communication is welcome.
+      %li Homework is an important part of Extended Day. Educators provide assistance on an individual basis.
+      %li Extended Day provides a special entertainment program for the six Early Release days during the school year.
+      %li The Program is not responsible for making arrangements for the arrival to or departure from the Program, or to any activities on or off the premises.
+
+= partial 'views/shared/triptych',
+  locals: { photos: ['Information_4_GirlHomework', 'Information_5_Games', 'Information_6_BasketballHoop'] }
+
+.copy-wrapper
+  .copy
+    %p Good health and nutrition are encouraged and is an integral part of the Program. We offer the following suggestions of nutritious items for lunch
+    %ul.bullets
+      %li Yogurt
+      %li Fresh Fruit & Vegetables
+      %li Cheese
+      %li Pasta
+      %li Juice & Water%h1
