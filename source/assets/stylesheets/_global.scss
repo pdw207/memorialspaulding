@@ -1,5 +1,7 @@
 #main-content {
-  margin-top: $navigation-height;
+  @include media ($medium-screen) {
+    margin-top: $navigation-height;
+  }
 }
 
 #footer {
