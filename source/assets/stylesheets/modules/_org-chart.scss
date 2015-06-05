@@ -1,0 +1,19 @@
+.org-chart {
+  margin: $container-spacing auto;
+  width: 90%;
+  text-align: center;
+
+  li {
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    span:after {
+      content: "";
+      border-left: 1px #999  solid;
+      height: 20px;
+      position: absolute;
+      left: 50%;
+      top: 23px;
+    }
+  }
+}
