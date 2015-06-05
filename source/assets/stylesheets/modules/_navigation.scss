@@ -119,14 +119,16 @@
       &:hover {
         color: $navigation-color-hover;
       }
-      &.active:after {
-        content: "";
-        border-bottom: 2px $navigation-color solid;
-        padding: 16px;
-        position: absolute;
-        top: 44px;
-        right: 15px;
-        width: 100%;
+      @include media ($medium-screen){
+        &.active:after {
+          content: "";
+          border-bottom: 2px $navigation-color solid;
+          padding: 16px;
+          position: absolute;
+          top: 44px;
+          right: 15px;
+          width: 100%;
+        }
       }
     }
 

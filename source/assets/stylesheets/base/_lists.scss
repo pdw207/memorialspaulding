@@ -19,7 +19,7 @@ ol {
   &.bullets li:before {
     content: "·";
     font-size: 59px;
-    vertical-align: text-bottom;
+    vertical-align: text-top;
     line-height: 12px;
   }
 }
