@@ -16,11 +16,15 @@ ol {
     padding-left: $base-spacing;
   }
 
-  &.bullets li:before {
-    content: "·";
-    font-size: 59px;
-    vertical-align: text-top;
-    line-height: 12px;
+  &.bullets {
+   padding-left: 0.5em;
+    li:before {
+      content: "·";
+      font-size: 59px;
+      vertical-align: middle;
+      line-height: 12px;
+      padding-right: 0.25em;
+    }
   }
 }
 

@@ -1,29 +1,24 @@
-
-body {
-  background-color: $light-gray;
-  color: $medium-gray;
-}
-
 #main-content {
-  margin-top: $navigation-height + $container-spacing;
+  margin-top: $navigation-height;
 }
 
 #footer {
   clear: both;
   background: $white;
-  padding: 30px;
+  padding: $container-spacing;
   width: 100%;
-  height: $footer-height;
 }
 
 .hide {
   display: none;
 }
 
-.intro,
-.info,
 .copy {
   margin: auto;
   width: 90%;
-  max-width: 700px;
+  max-width: 800px;
+}
+
+.information-for-parents ul li{
+  margin-bottom: 1.5em;
 }
