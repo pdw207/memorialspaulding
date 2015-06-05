@@ -1,8 +1,5 @@
-= partial 'views/shared/triptych',
-  locals: { photos: ['Information_1_Backpack', 'Information_2_LeavingRoom', 'Information_3_Toys'] }
-
 .copy-wrapper
-  .copy
+  .information-for-parents.copy
     %h1 Information for Parents
     %ul.bullets
       %li Memorial Spaulding School Extended Day is an on-site facility for children in kindergarten through grade five.
@@ -15,7 +12,7 @@
       %li The Program is not responsible for making arrangements for the arrival to or departure from the Program, or to any activities on or off the premises.
 
 = partial 'views/shared/triptych',
-  locals: { photos: ['Information_4_GirlHomework', 'Information_5_Games', 'Information_6_BasketballHoop'] }
+  locals: { photos: ['Information_1_Backpack', 'Information_2_LeavingRoom', 'Information_3_Toys'] }
 
 .copy-wrapper
   .copy
@@ -26,3 +23,7 @@
       %li Cheese
       %li Pasta
       %li Juice & Water%h1
+
+= partial 'views/shared/triptych',
+  locals: { photos: ['Information_4_GirlHomework', 'Information_5_Games', 'Information_6_BasketballHoop'] }
+
