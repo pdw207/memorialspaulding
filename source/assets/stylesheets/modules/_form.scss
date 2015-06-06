@@ -9,7 +9,10 @@ form {
       li {
         width: 50%;
         float: left;
-        input {
+        &:last-child * {
+          float: right;
+        }
+        * {
           width: 95%;
         }
       }
