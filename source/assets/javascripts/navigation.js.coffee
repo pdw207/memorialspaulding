@@ -1,4 +1,8 @@
-$("#js-navigation-mobile-menu").on "click", (e) ->
-  e.preventDefault()
-  $("#js-navigation-menu").slideToggle ->
-
+$(document).ready ->
+  menuToggle = $('#js-navigation-mobile-menu').unbind()
+  $('#js-navigation-menu').removeClass 'show'
+  menuToggle.on 'click', (e) ->
+    e.preventDefault()
+    $('#js-navigation-menu').slideToggle ->
+      if $('#js-navigation-menu').is(':hidden')
+        $('#js-navigation-menu').removeAttr 'style'

@@ -85,7 +85,7 @@
   ul.navigation-menu {
     -webkit-transform-style: preserve-3d; // stop webkit flicker
     clear: both;
-    display: block;
+    display: none;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
@@ -125,7 +125,7 @@
       &:hover {
         color: $navigation-color-hover;
       }
-      @include media ($medium-screen){
+      @include media ($horizontal-bar-mode){
         &.active:after {
           content: "";
           border-bottom: 2px $navigation-color solid;
@@ -169,10 +169,13 @@
     line-height: $navigation-height;
     display: inline-block;
     margin-left: 25px;
+    @include media($horizontal-bar-mode) {
+      float: left;
+    }
     img {
       margin-bottom: -1.25em;
       max-height: 3.5em;
-      @include media($medium-screen) {
+      @include media($horizontal-bar-mode) {
         margin-bottom: -37px;
         max-height: 90px;
       }
