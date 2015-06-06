@@ -9,6 +9,9 @@
   background: $white;
   padding: $container-spacing;
   width: 100%;
+  a {
+    color: $base-font-color;
+  }
 }
 
 .hide {
