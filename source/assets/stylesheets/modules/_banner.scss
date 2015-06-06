@@ -4,6 +4,7 @@ $pages: Information, About, Contact;
   @include media ($medium-screen) {
     ##{$page}-banner {
       content:url("/assets/images/#{$page}_Banner_LG.jpg");
+      margin-bottom: -6px;
     }
   }
 }
