@@ -27,3 +27,10 @@
 .information-for-parents ul li{
   margin-bottom: 1.5em;
 }
+
+.map-wrapper {
+  background:url("/assets/images/placeholder-map.png") center center no-repeat;
+  background-size: cover;
+  height: 450px;
+  margin-bottom: 150px;
+   }
