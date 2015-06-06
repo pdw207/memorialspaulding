@@ -74,9 +74,11 @@
     @include clearfix;
     position: relative;
     z-index: 999;
-
-    svg {
-      vertical-align: middle;
+    @include media($horizontal-bar-mode) {
+      nav {
+        display: inline-block;
+        float: right;
+      }
     }
   }
 
@@ -89,6 +91,10 @@
     padding: 0;
     width: 100%;
     z-index: 99999;
+    @include media($horizontal-bar-mode) {
+      display: inline-block;
+      height: $navigation-height;
+    }
   }
 
   // The nav items
@@ -125,15 +131,14 @@
           border-bottom: 2px $navigation-color solid;
           padding: 16px;
           position: absolute;
-          top: 44px;
-          right: 15px;
+          top: 0;
+          right: 8px;
           width: 100%;
         }
       }
     }
 
     @include media($horizontal-bar-mode) {
-      float: right;
       background: transparent;
       margin-right: 25px;
       display: inline;
@@ -160,9 +165,18 @@
     }
   }
 
-  .logo img {
-    margin-bottom: -$navigation-logo-height / 3 - 1em;
-    max-height: 5em;
+  .logo {
+    line-height: $navigation-height;
+    display: inline-block;
+    margin-left: 25px;
+    img {
+      margin-bottom: -1.25em;
+      max-height: 3.5em;
+      @include media($medium-screen) {
+        margin-bottom: -37px;
+        max-height: 90px;
+      }
+    }
   }
 
   // Sub menus
