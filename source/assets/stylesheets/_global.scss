@@ -29,8 +29,13 @@
 }
 
 .map-wrapper {
-  background:url("/assets/images/placeholder-map.png") center center no-repeat;
-  background-size: cover;
-  height: 450px;
+  .overlay {
+    background:transparent;
+    position:relative;
+    width: 100%;
+    height:450px;
+    top:450px;
+    margin-top:-450px;
+  }
   margin-bottom: 150px;
-   }
+}
