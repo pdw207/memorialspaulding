@@ -156,7 +156,10 @@
   }
 
   .modal-state:checked + .modal-window .modal-inner {
-    top: 0.5em;
+    top: 150px;
+    @include media($medium-screen) {
+      top: 0.5em;
+    }
   }
 }
 
