@@ -7,15 +7,26 @@
 #footer {
   clear: both;
   background: $white;
-  padding: $container-spacing;
+  padding: $container-spacing-mobile;
   width: 100%;
   a {
     color: $base-font-color;
+  }
+  @include media ($medium-screen) {
+    padding: $container-spacing;
   }
 }
 
 .hide {
   display: none;
+}
+
+.copy-wrapper {
+  clear: both;
+  padding: $container-spacing-mobile 0;
+  @include media ($medium-screen) {
+    padding: $container-spacing 0;
+  }
 }
 
 .copy {

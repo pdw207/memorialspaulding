@@ -6,6 +6,7 @@
   li {
     position: relative;
     text-transform: uppercase;
+    list-style: none;
     padding-bottom: 20px;
     span:after {
       content: "";
@@ -14,6 +15,12 @@
       position: absolute;
       left: 50%;
       top: 23px;
+      @include media ($medium-screen) {
+        top:29px
+      }
+    }
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 }

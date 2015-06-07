@@ -5,6 +5,9 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  @include media($medium-screen) {
+    font-size: $base-font-size-desktop;
+  }
 }
 
 h1,
@@ -23,6 +26,7 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
+  text-align: justify;
 }
 
 a {

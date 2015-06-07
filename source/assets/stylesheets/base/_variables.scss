@@ -5,6 +5,7 @@ $heading-font-family: $base-font-family;
 // Font Sizes
 $base-font-size: 1em;
 $header-font-size: $base-font-size * 1.5;
+$base-font-size-desktop: 1.2em;
 
 // Line height
 $base-line-height: 1.5;
@@ -15,8 +16,10 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
-$navigation-height: 120px;
-$container-spacing: 50px;
+$navigation-height: 165px;
+$navigation-height-mobile: 100px;
+$container-spacing: 65px;
+$container-spacing-mobile: 50px;
 
 // Colors
 $blue: #477dca;

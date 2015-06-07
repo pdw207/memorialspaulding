@@ -12,6 +12,8 @@
   $navigation-background: #fff;
   $navigation-color: transparentize($base-font-color, 0.3);
   $navigation-color-hover: $base-font-color;
+  $mobile-navgiation-color: white;
+  $mobile-background-navigation-color: black;
   $navigation-item-padding: 1em;
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
@@ -20,6 +22,8 @@
   @include media($medium-screen) {
     position: fixed;
     top: 0;
+    font-size: 0.9em;;
+    border-bottom: 1px black solid;
   }
 
   background-color: $navigation-background;
@@ -91,9 +95,11 @@
     padding: 0;
     width: 100%;
     z-index: 99999;
+    background-color: rgb(230, 228, 228);
     @include media($horizontal-bar-mode) {
       display: inline-block;
-      height: $navigation-height;
+      background-color: white;
+      height: $navigation-height - 1px;
     }
   }
 
@@ -106,12 +112,10 @@
   }
 
   ul li.nav-link {
-    background: $navigation-background;
     font-weight: 700;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    padding-right: $navigation-submenu-padding;
     text-align: center;
     z-index: 9999;
     position: relative;
@@ -120,6 +124,19 @@
       color: $navigation-color;
       display: inline-block;
       outline: none;
+      text-transform: uppercase;
+      width: 100%;
+      &.active {
+        color: $mobile-navgiation-color;
+        background-color: $mobile-background-navigation-color;
+        @include media ($horizontal-bar-mode){
+          color: $navigation-color-hover;
+          background-color: transparent;
+        }
+      }
+      @include media ($horizontal-bar-mode){
+        width: auto;
+      }
 
       &:focus,
       &:hover {
@@ -128,7 +145,7 @@
       @include media ($horizontal-bar-mode){
         &.active:after {
           content: "";
-          border-bottom: 2px $navigation-color solid;
+          border-bottom: 1px $navigation-color solid;
           padding: 16px;
           position: absolute;
           top: 0;
@@ -139,6 +156,7 @@
     }
 
     @include media($horizontal-bar-mode) {
+      padding-right: $navigation-submenu-padding;
       background: transparent;
       margin-right: 25px;
       display: inline;
@@ -148,7 +166,6 @@
       a {
         padding-right: $navigation-item-padding;
         padding-left: $navigation-item-padding;
-        text-transform: uppercase;
       }
     }
   }
