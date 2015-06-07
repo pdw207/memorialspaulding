@@ -1,1 +1,4 @@
-//= require_tree .
+//= require "map"
+//= require "modal"
+//= require "navigation"
+//= require "validate"
