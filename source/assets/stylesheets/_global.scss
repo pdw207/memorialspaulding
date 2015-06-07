@@ -1,5 +1,5 @@
 #main-content {
-  @include media ($medium-screen) {
+  @include media($large-screen) {
     margin-top: $navigation-height;
   }
 }
