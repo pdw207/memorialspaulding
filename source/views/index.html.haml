@@ -1,6 +1,6 @@
 ---
 title: About Memorial Spaulding
-description: Memorial Spaulding an afterschool Program
+description: About the Memorial Spaulding Afterschool Program
 ---
 = image_tag "About_Banner_SM.jpg", :alt => "Kids at Work", :id => "About-banner"
 
@@ -10,7 +10,7 @@ description: Memorial Spaulding an afterschool Program
 
     %p Extended Day provides a semi-structured recreational program based on each child’s needs and interests on-site at the Memorial Spaulding School in Newton. Our curriculum is designed to complement the children’s day in an informal and relaxed setting and our staff is dedicated to making every day a supportive and joyful experience for each child.
 
-= partial 'views/shared/triptych',
+= partial 'layouts/shared/triptych',
   locals: { photos: ['About_1_Drawing', 'About_2_LadybugBoard', 'About_3_ConnectFour'] }
 
 .copy-wrapper
@@ -28,5 +28,5 @@ description: Memorial Spaulding an afterschool Program
         %span Group Leader
       %li Assistant Leader
 
-= partial 'views/shared/triptych',
+= partial 'layouts/shared/triptych',
   locals: { photos: ['About_4_Books', 'About_5_BoyBack', 'About_6_DoorSign'] }

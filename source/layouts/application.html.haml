@@ -4,15 +4,17 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "The Middleman"
+    %meta{name: "description", content: "Extended Day provides a semi-structured recreational program based on each child’s needs and interests on-site at the Memorial Spaulding School in Newton. Our curriculum is designed to complement the children’s day in an informal and relaxed setting and our staff is dedicated to making every day a supportive and joyful experience for each child."}
+    %meta{name: "keywords", content: "Memorial Spaulding, Newton Center, Boston, Massachusetts, After School Program"}
+    %title= current_page.data.title || "Memorial Spaulding"
     = stylesheet_link_tag "application"
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
   %body{class: page_classes}
-    = partial 'views/shared/nav'
+    = partial 'layouts/shared/nav'
     #main-content
       = yield
     #footer
-      = partial 'views/shared/footer'
+      = partial 'layouts/shared/footer'
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"

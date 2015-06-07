@@ -1,9 +1,12 @@
+
+
 $pages: Information, About, Contact;
 
 @each $page in $pages {
   @include media ($medium-screen) {
     ##{$page}-banner {
-      content:url("/assets/images/#{$page}_Banner_LG.jpg");
+      content:image-url("/assets/images/#{$page}_Banner_LG.jpg");
+      width: 100%;
       margin-bottom: -6px;
     }
   }
